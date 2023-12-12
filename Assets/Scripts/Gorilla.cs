@@ -6,6 +6,8 @@ using UnityEngine.AI;
 
 public class Gorilla : MonoBehaviour
 {
+    public bool isWalking = true;
+
     public NavMeshAgent agent;
     public float wanderDistance;
     private Vector3 targetPosition;
@@ -28,7 +30,7 @@ public class Gorilla : MonoBehaviour
         {
             _waitTimer += Time.deltaTime;
         }
-        else
+        else if(isWalking)
         {
             Vector3 randomDirection = UnityEngine.Random.insideUnitSphere * wanderDistance;
             randomDirection += transform.position;
@@ -37,7 +39,13 @@ public class Gorilla : MonoBehaviour
             targetPosition = navHit.position;
             agent.SetDestination(targetPosition);
             _waitTimer = 0f;
+        }   
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Banana") {
+            GetComponent<Animator>().Play("Jump");
         }
-        
     }
 }
