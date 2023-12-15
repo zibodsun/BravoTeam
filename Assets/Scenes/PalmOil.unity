@@ -171,13 +171,13 @@ MonoBehaviour:
   m_Data:
     m_ConstrainedObject: {fileID: 854129029}
     m_SourceObjects:
-      m_Length: 2
+      m_Length: 1
       m_Item0:
         transform: {fileID: 358835110}
         weight: 1
       m_Item1:
-        transform: {fileID: 378056289}
-        weight: 1
+        transform: {fileID: 0}
+        weight: 0
       m_Item2:
         transform: {fileID: 0}
         weight: 0
@@ -492,11 +492,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cc11afacf4da2984d8d0cc4de201e740, type: 3}
   m_PrefabInstance: {fileID: 2123363925}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &378056289 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cc11afacf4da2984d8d0cc4de201e740, type: 3}
-  m_PrefabInstance: {fileID: 2123363925}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &378056290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -540,7 +535,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gorillas:
   - {fileID: 795331077}
-  - {fileID: 0}
   human: {fileID: 378056290}
 --- !u!4 &689504355
 Transform:
@@ -1562,7 +1556,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: cc11afacf4da2984d8d0cc4de201e740, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.121976614
+      value: -3.73
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cc11afacf4da2984d8d0cc4de201e740, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1570,7 +1564,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cc11afacf4da2984d8d0cc4de201e740, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.3
+      value: 0.73
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cc11afacf4da2984d8d0cc4de201e740, type: 3}
       propertyPath: m_LocalRotation.w

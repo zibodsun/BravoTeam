@@ -4,6 +4,8 @@ using System.Collections.Specialized;
 using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Animations;
+using UnityEngine.Animations.Rigging;
 using static UnityEngine.GraphicsBuffer;
 
 public class Gorilla : MonoBehaviour
@@ -21,11 +23,16 @@ public class Gorilla : MonoBehaviour
     private float _waitTime;
     private float _waitTimer;
 
+    private MultiAimConstraint multiAimConstraint;
+    private RigBuilder rb;
+
     // Start is called before the first frame update
     void Start()
     {
         _waitTime = 5f;
         numBananas = 0;
+        multiAimConstraint = GetComponentInChildren<MultiAimConstraint>();
+        rb = GetComponentInChildren<RigBuilder>();
     }
 
     // Update is called once per frame
@@ -62,6 +69,8 @@ public class Gorilla : MonoBehaviour
         numBananas++;
         GetComponent<Animator>().Play("Jump");
         GetComponent<Collider>().enabled = false;
+
+        // multiAimConstraint.data.sourceObjects.Clear();
     }
     // check if this gorilla has been given any bananas
     public bool HasBanana() {
@@ -77,8 +86,11 @@ public class Gorilla : MonoBehaviour
         yield return null;
     }
 
-    public void AttackHuman() { 
+    public void AttackHuman() {
+        Debug.Log("Attack Human");
         Human human = (Human)FindAnyObjectByType(typeof(Human));
         StartCoroutine(Walk(attackPosition.position));
+        // multiAimConstraint.data.sourceObjects.Add(new WeightedTransform(human.transform, 1));
+        
     }
 }
