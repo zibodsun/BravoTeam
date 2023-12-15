@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
+using static UnityEngine.GraphicsBuffer;
 
 public class Gorilla : MonoBehaviour
 {
@@ -10,6 +12,10 @@ public class Gorilla : MonoBehaviour
 
     public NavMeshAgent agent;
     public float wanderDistance;
+    public int numBananas;
+    public Transform bananaAttachPoint;
+
+    public Transform attackPosition;
     private Vector3 targetPosition;
 
     private float _waitTime;
@@ -19,6 +25,7 @@ public class Gorilla : MonoBehaviour
     void Start()
     {
         _waitTime = 5f;
+        numBananas = 0;
     }
 
     // Update is called once per frame
@@ -45,7 +52,33 @@ public class Gorilla : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Banana") {
-            GetComponent<Animator>().Play("Jump");
+            other.transform.SetParent(bananaAttachPoint);
+            other.transform.localPosition = new Vector3(0, 0, 0);
+            GainBanana();
         }
+    }
+    // add a banana to this gorilla
+    public void GainBanana() {
+        numBananas++;
+        GetComponent<Animator>().Play("Jump");
+        GetComponent<Collider>().enabled = false;
+    }
+    // check if this gorilla has been given any bananas
+    public bool HasBanana() {
+        if (numBananas > 0) {
+            return true;
+        }
+        return false;
+    }
+
+    IEnumerator Walk(Vector3 target) {
+        var step = 1 * Time.deltaTime; // calculate distance to move
+        transform.position = Vector3.MoveTowards(transform.position, target, step);
+        yield return null;
+    }
+
+    public void AttackHuman() { 
+        Human human = (Human)FindAnyObjectByType(typeof(Human));
+        StartCoroutine(Walk(attackPosition.position));
     }
 }
