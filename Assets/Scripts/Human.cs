@@ -6,20 +6,62 @@ using static UnityEngine.GraphicsBuffer;
 
 public class Human : MonoBehaviour
 {
+    public enum State
+    {
+        Walking,
+        Cutting,
+        Escaping
+    }
+
     public Transform targetTree;
     public NavMeshAgent agent;
+
+    public State state;
+    public State tempState;
+
+    Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
         ApproachTree();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(state != tempState)  // when the state changes
+        {
+            switch (state)
+            {
+                case State.Walking:
+                    // play walking animation
+                    break;
+                case State.Cutting:
+                    animator.Play("Cutting");
+                    break;
+                case State.Escaping:
+                    // play escape animation
+                    break;
 
+            }
+        }   
+
+        // Check if we've reached the destination
+        if (!agent.pathPending)
+        {
+            if (agent.remainingDistance <= agent.stoppingDistance)
+            {
+                if (!agent.hasPath || agent.velocity.sqrMagnitude == 0f)
+                {
+                    tempState = state;
+                    state = State.Cutting;
+                }
+            }
+        }
     }
 
     public void OnTriggerEnter(Collider other)
@@ -31,6 +73,8 @@ public class Human : MonoBehaviour
     }
     public void ApproachTree() {
         agent.SetDestination(targetTree.position);
+        tempState = state;
+        state = State.Walking;
     }
     public void Escape() {
         // animaition play
