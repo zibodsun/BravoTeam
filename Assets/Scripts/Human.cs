@@ -50,7 +50,7 @@ public class Human : MonoBehaviour
             }
         }   
 
-        // Check if we've reached the destination
+        // When the destination is reached
         if (!agent.pathPending)
         {
             if (agent.remainingDistance <= agent.stoppingDistance)

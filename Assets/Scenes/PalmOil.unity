@@ -345,7 +345,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ea47e915bd7a3184ab68d5066a1824d6, type: 2}
+  - {fileID: 2100000, guid: 2e667a20a354f194c98767e9c255c332, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1975,6 +1975,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetTree: {fileID: 1941814642}
   agent: {fileID: 2110850179}
+  state: 0
+  tempState: 0
 --- !u!95 &2110850181
 Animator:
   serializedVersion: 5
