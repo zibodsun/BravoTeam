@@ -6,11 +6,12 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Animations;
 using UnityEngine.Animations.Rigging;
+using UnityEngine.XR.Interaction.Toolkit;
 using static UnityEngine.GraphicsBuffer;
 
 public class Gorilla : MonoBehaviour
 {
-    public bool isWalking = true;
+    public bool isRoaming = true;
 
     public NavMeshAgent agent;
     public float wanderDistance;
@@ -49,7 +50,7 @@ public class Gorilla : MonoBehaviour
         {
             _waitTimer += Time.deltaTime;
         }
-        else if(isWalking)
+        else if(isRoaming)
         {
             Vector3 randomDirection = UnityEngine.Random.insideUnitSphere * wanderDistance;
             randomDirection += transform.position;
@@ -64,6 +65,7 @@ public class Gorilla : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Banana") {
+            other.GetComponent<XRGrabInteractable>().enabled = false;
             other.transform.SetParent(bananaAttachPoint);
             other.transform.localPosition = new Vector3(0, 0, 0);
             GainBanana();
@@ -88,14 +90,15 @@ public class Gorilla : MonoBehaviour
     IEnumerator Walk(Vector3 target) {
         var step = 1 * Time.deltaTime; // calculate distance to move
         transform.position = Vector3.MoveTowards(transform.position, target, step);
+        Debug.Log("Moving " + this.gameObject.name);
         yield return null;
     }
 
     public void AttackHuman() {
-        Debug.Log("Attack Human");
-        Human human = (Human)FindAnyObjectByType(typeof(Human));
-        StartCoroutine(Walk(attackPosition.position));
+        // Human human = (Human)FindAnyObjectByType(typeof(Human));
+        // StartCoroutine(Walk(attackPosition.position));
         // multiAimConstraint.data.sourceObjects.Add(new WeightedTransform(human.transform, 1));
-        
+        agent.SetDestination(attackPosition.position);
+        isRoaming = false;
     }
 }
