@@ -25,6 +25,8 @@ public class Gorilla : MonoBehaviour
 
     private MultiAimConstraint multiAimConstraint;
     private RigBuilder rb;
+    private Animator animator;
+    private float speed;
 
     // Start is called before the first frame update
     void Start()
@@ -33,11 +35,14 @@ public class Gorilla : MonoBehaviour
         numBananas = 0;
         multiAimConstraint = GetComponentInChildren<MultiAimConstraint>();
         rb = GetComponentInChildren<RigBuilder>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        speed = agent.desiredVelocity.magnitude;
+        animator.SetFloat("speed", speed);
 
         // Random NavMesh position
         if (_waitTimer < _waitTime)

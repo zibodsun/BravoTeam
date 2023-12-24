@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chinese Evergreen
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 99d51e717e3905d479c1f57c356240dc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 99d51e717e3905d479c1f57c356240dc, type: 3}
       propertyPath: m_LocalScale.x
       value: 161.87
