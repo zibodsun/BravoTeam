@@ -108,24 +108,24 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.81666666
         value: {x: 22.259, y: -41.314, z: 59.075}
-        inSlope: {x: 0, y: 0, z: 1.6156566}
-        outSlope: {x: 0, y: 0, z: 1.6156566}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 2.3
-        value: {x: 17.947, y: -38.615, z: 60.004}
-        inSlope: {x: -5.1072483, y: 2.1744957, z: 1.4963771}
-        outSlope: {x: -5.1072483, y: 2.1744957, z: 1.4963771}
+        value: {x: 21.971, y: -41.245, z: 56.131}
+        inSlope: {x: -0.4638928, y: 0.11114133, z: 0}
+        outSlope: {x: -0.4638928, y: 0.11114133, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 3.3
-        value: {x: 9.576, y: -35.914, z: 72.904}
+        value: {x: 11.316, y: -36.474, z: 71.334}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -134,7 +134,7 @@ AnimationClip:
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 4.4666667
-        value: {x: 17.468, y: -50.038, z: 56.548}
+        value: {x: 19.084, y: -51.208, z: 53.857}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -532,16 +532,16 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 2.3
-        value: 17.947
-        inSlope: -5.1072483
-        outSlope: -5.1072483
+        value: 21.971
+        inSlope: -0.4638928
+        outSlope: -0.4638928
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 3.3
-        value: 9.576
+        value: 11.316
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -550,7 +550,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 4.4666667
-        value: 17.468
+        value: 19.084
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -590,16 +590,16 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 2.3
-        value: -38.615
-        inSlope: 2.1744957
-        outSlope: 2.1744957
+        value: -41.245
+        inSlope: 0.11114133
+        outSlope: 0.11114133
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 3.3
-        value: -35.914
+        value: -36.474
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -608,7 +608,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 4.4666667
-        value: -50.038
+        value: -51.208
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -640,24 +640,24 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.81666666
         value: 59.075
-        inSlope: 1.6156566
-        outSlope: 1.6156566
+        inSlope: 0
+        outSlope: 0
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 2.3
-        value: 60.004
-        inSlope: 1.4963771
-        outSlope: 1.4963771
+        value: 56.131
+        inSlope: 0
+        outSlope: 0
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 3.3
-        value: 72.904
+        value: 71.334
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -666,7 +666,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 4.4666667
-        value: 56.548
+        value: 53.857
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -863,7 +863,7 @@ AnimationClip:
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
     path: Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 Neck/Bip01
-      L Clavicle/Bip01 L UpperArm
+      R Clavicle/Bip01 R UpperArm
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -876,20 +876,7 @@ AnimationClip:
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
     path: Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 Neck/Bip01
-      L Clavicle/Bip01 L UpperArm
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 Neck/Bip01
-      L Clavicle/Bip01 L UpperArm
+      R Clavicle/Bip01 R UpperArm
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -913,9 +900,22 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 Neck/Bip01
+      L Clavicle/Bip01 L UpperArm
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
     path: Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 Neck/Bip01
-      R Clavicle/Bip01 R UpperArm
+      L Clavicle/Bip01 L UpperArm
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -928,7 +928,7 @@ AnimationClip:
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
     path: Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 Neck/Bip01
-      R Clavicle/Bip01 R UpperArm
+      L Clavicle/Bip01 L UpperArm
     classID: 4
     script: {fileID: 0}
     flags: 0

@@ -20,6 +20,7 @@ public class Human : MonoBehaviour
     public State tempState;
 
     Animator animator;
+    private float _speed;
 
     // Start is called before the first frame update
     void Start()
@@ -33,7 +34,11 @@ public class Human : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(state != tempState)  // when the state changes
+        // walking animation
+        _speed = agent.desiredVelocity.magnitude;
+        animator.SetFloat("speed", _speed);
+
+        if (state != tempState)  // when the state changes
         {
             switch (state)
             {
@@ -41,7 +46,7 @@ public class Human : MonoBehaviour
                     // play walking animation
                     break;
                 case State.Cutting:
-                    animator.Play("Cutting");
+                    animator.Play("BeginCutting");
                     break;
                 case State.Escaping:
                     // play escape animation
