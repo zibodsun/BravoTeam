@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.Net.NetworkInformation;
 using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
@@ -18,7 +19,7 @@ public class Gorilla : MonoBehaviour
     public int numBananas;
     public Transform bananaAttachPoint;
 
-    public Transform attackPosition;
+    public Transform attackPosition;        // Place outside of wander distance to avoid issues
     private Vector3 targetPosition;
 
     private float _waitTime;
@@ -59,7 +60,14 @@ public class Gorilla : MonoBehaviour
             targetPosition = navHit.position;
             agent.SetDestination(targetPosition);
             _waitTimer = 0f;
-        }   
+        }
+
+        // when attack position is reached
+        if (Vector3.Distance(attackPosition.position, transform.position) <= 0.1f)
+        {
+            animator.Play("Angry");
+            Debug.Log("Reached Attack Position");
+        }
     }
 
     public void OnTriggerEnter(Collider other)

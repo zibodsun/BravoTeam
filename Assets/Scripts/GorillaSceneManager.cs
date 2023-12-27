@@ -24,7 +24,6 @@ public class GorillaSceneManager : MonoBehaviour
             return;
         }
 
-        Debug.Log("All gorillas have bananas");
         // this code won't run untill all gorillas have bananas
         human.gameObject.SetActive(true);
 
