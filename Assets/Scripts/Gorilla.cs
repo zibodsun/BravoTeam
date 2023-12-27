@@ -98,6 +98,7 @@ public class Gorilla : MonoBehaviour
         // Human human = (Human)FindAnyObjectByType(typeof(Human));
         // StartCoroutine(Walk(attackPosition.position));
         // multiAimConstraint.data.sourceObjects.Add(new WeightedTransform(human.transform, 1));
+        GetComponent<RigBuilder>().enabled = true;
         agent.SetDestination(attackPosition.position);
         isRoaming = false;
     }

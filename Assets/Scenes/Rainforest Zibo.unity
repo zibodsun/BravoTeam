@@ -3237,7 +3237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddedea66231d11a4e9b938cd09fd96ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWalking: 1
+  isRoaming: 1
   agent: {fileID: 917965825}
   wanderDistance: 3
   numBananas: 0
@@ -5997,7 +5997,7 @@ MonoBehaviour:
         weight: 1
       m_Item1:
         transform: {fileID: 1162536245}
-        weight: 0
+        weight: 1
       m_Item2:
         transform: {fileID: 0}
         weight: 0
@@ -7702,7 +7702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddedea66231d11a4e9b938cd09fd96ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWalking: 1
+  isRoaming: 1
   agent: {fileID: 1939455770}
   wanderDistance: 3
   numBananas: 0
@@ -8280,6 +8280,7 @@ MonoBehaviour:
   - {fileID: 917965821}
   - {fileID: 1939455769}
   human: {fileID: 998473544}
+  waitBeforeAttackTime: 5
 --- !u!4 &2128380600
 Transform:
   m_ObjectHideFlags: 0
