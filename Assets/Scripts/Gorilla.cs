@@ -29,6 +29,7 @@ public class Gorilla : MonoBehaviour
     private RigBuilder rb;
     private Animator animator;
     private float speed;
+    private bool _startedAttacking;
 
     // Start is called before the first frame update
     void Start()
@@ -63,15 +64,16 @@ public class Gorilla : MonoBehaviour
         }
 
         // when attack position is reached
-        if (Vector3.Distance(attackPosition.position, transform.position) <= 0.1f)
+        if (reachedLocation())
         {
+            _startedAttacking = true;
             animator.Play("Angry");
-            Debug.Log("Reached Attack Position");
         }
     }
 
     public void OnTriggerEnter(Collider other)
     {
+        // When banana is given to the gorilla
         if (other.tag == "Banana") {
             other.GetComponent<XRGrabInteractable>().enabled = false;
             other.transform.SetParent(bananaAttachPoint);
@@ -109,5 +111,12 @@ public class Gorilla : MonoBehaviour
         GetComponent<RigBuilder>().enabled = true;
         agent.SetDestination(attackPosition.position);
         isRoaming = false;
+    }
+
+    bool reachedLocation() {
+        if (_startedAttacking) {
+            return false;
+        }
+        return Vector3.Distance(attackPosition.position, transform.position) <= 0.1f;
     }
 }
