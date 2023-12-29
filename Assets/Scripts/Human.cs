@@ -13,6 +13,7 @@ public class Human : MonoBehaviour
         Escaping
     }
 
+    public GorillaSceneManager sceneManager;
     public Transform targetTree;
     public NavMeshAgent agent;
 
@@ -64,6 +65,7 @@ public class Human : MonoBehaviour
                 {
                     tempState = state;
                     state = State.Cutting;
+                    sceneManager.humanStartedCutting = true;
                 }
             }
         }
@@ -77,7 +79,8 @@ public class Human : MonoBehaviour
         }
     }
     public void ApproachTree() {
-        agent.SetDestination(targetTree.position);
+        Vector3 offset = new Vector3(0, 0, 1.1f);
+        agent.SetDestination(targetTree.position + offset);
         tempState = state;
         state = State.Walking;
     }

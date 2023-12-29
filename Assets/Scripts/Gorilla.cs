@@ -12,6 +12,7 @@ using static UnityEngine.GraphicsBuffer;
 
 public class Gorilla : MonoBehaviour
 {
+    public GorillaSceneManager sceneManager;
     public bool isRoaming = true;
 
     public NavMeshAgent agent;
@@ -21,6 +22,8 @@ public class Gorilla : MonoBehaviour
 
     public Transform attackPosition;        // Place outside of wander distance to avoid issues
     private Vector3 targetPosition;
+
+    public float throwForce;
 
     private float _waitTime;
     private float _waitTimer;
@@ -67,9 +70,10 @@ public class Gorilla : MonoBehaviour
         }
 
         // when attack position is reached
-        if (reachedLocation())
+        if (reachedLocation() && sceneManager.humanStartedCutting)
         {
             _startedAttacking = true;
+            transform.LookAt(FindFirstObjectByType<Human>().transform);
             animator.Play("Angry");
         }
     }
@@ -122,7 +126,7 @@ public class Gorilla : MonoBehaviour
         banana.transform.SetParent(null);
         rb.useGravity = true;
         rb.isKinematic = false;
-        rb.AddForce(transform.forward * 500);
+        rb.AddForce(transform.forward * throwForce * 100);
     }
 
     bool reachedLocation() {
