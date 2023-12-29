@@ -26,10 +26,13 @@ public class Gorilla : MonoBehaviour
     private float _waitTimer;
 
     private MultiAimConstraint multiAimConstraint;
-    private RigBuilder rb;
+    private RigBuilder rigBuilder;
     private Animator animator;
     private float speed;
     private bool _startedAttacking;
+
+    Transform banana;
+    Rigidbody rb;
 
     // Start is called before the first frame update
     void Start()
@@ -37,7 +40,7 @@ public class Gorilla : MonoBehaviour
         _waitTime = 5f;
         numBananas = 0;
         multiAimConstraint = GetComponentInChildren<MultiAimConstraint>();
-        rb = GetComponentInChildren<RigBuilder>();
+        rigBuilder = GetComponentInChildren<RigBuilder>();
         animator = GetComponent<Animator>();
     }
 
@@ -108,9 +111,18 @@ public class Gorilla : MonoBehaviour
         // Human human = (Human)FindAnyObjectByType(typeof(Human));
         // StartCoroutine(Walk(attackPosition.position));
         // multiAimConstraint.data.sourceObjects.Add(new WeightedTransform(human.transform, 1));
-        GetComponent<RigBuilder>().enabled = true;
+        rigBuilder.enabled = true;
         agent.SetDestination(attackPosition.position);
         isRoaming = false;
+    }
+
+    public void ThrowBanana() {
+        banana = bananaAttachPoint.Find("Banana");
+        rb = banana.GetComponent<Rigidbody>();
+        banana.transform.SetParent(null);
+        rb.useGravity = true;
+        rb.isKinematic = false;
+        rb.AddForce(transform.forward * 500);
     }
 
     bool reachedLocation() {
