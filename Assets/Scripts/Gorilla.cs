@@ -12,6 +12,7 @@ using static UnityEngine.GraphicsBuffer;
 
 public class Gorilla : MonoBehaviour
 {
+    public GorillaSceneManager sceneManager;
     public bool isRoaming = true;
 
     public NavMeshAgent agent;
@@ -22,13 +23,19 @@ public class Gorilla : MonoBehaviour
     public Transform attackPosition;        // Place outside of wander distance to avoid issues
     private Vector3 targetPosition;
 
+    public float throwForce;
+
     private float _waitTime;
     private float _waitTimer;
 
     private MultiAimConstraint multiAimConstraint;
-    private RigBuilder rb;
+    private RigBuilder rigBuilder;
     private Animator animator;
     private float speed;
+    private bool _startedAttacking;
+
+    Transform banana;
+    Rigidbody rb;
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +43,7 @@ public class Gorilla : MonoBehaviour
         _waitTime = 5f;
         numBananas = 0;
         multiAimConstraint = GetComponentInChildren<MultiAimConstraint>();
-        rb = GetComponentInChildren<RigBuilder>();
+        rigBuilder = GetComponentInChildren<RigBuilder>();
         animator = GetComponent<Animator>();
     }
 
@@ -63,15 +70,17 @@ public class Gorilla : MonoBehaviour
         }
 
         // when attack position is reached
-        if (Vector3.Distance(attackPosition.position, transform.position) <= 0.1f)
+        if (reachedLocation() && sceneManager.humanStartedCutting)
         {
+            _startedAttacking = true;
+            transform.LookAt(FindFirstObjectByType<Human>().transform);
             animator.Play("Angry");
-            Debug.Log("Reached Attack Position");
         }
     }
 
     public void OnTriggerEnter(Collider other)
     {
+        // When banana is given to the gorilla
         if (other.tag == "Banana") {
             other.GetComponent<XRGrabInteractable>().enabled = false;
             other.transform.SetParent(bananaAttachPoint);
@@ -106,8 +115,24 @@ public class Gorilla : MonoBehaviour
         // Human human = (Human)FindAnyObjectByType(typeof(Human));
         // StartCoroutine(Walk(attackPosition.position));
         // multiAimConstraint.data.sourceObjects.Add(new WeightedTransform(human.transform, 1));
-        GetComponent<RigBuilder>().enabled = true;
+        rigBuilder.enabled = true;
         agent.SetDestination(attackPosition.position);
         isRoaming = false;
+    }
+
+    public void ThrowBanana() {
+        banana = bananaAttachPoint.Find("Banana");
+        rb = banana.GetComponent<Rigidbody>();
+        banana.transform.SetParent(null);
+        rb.useGravity = true;
+        rb.isKinematic = false;
+        rb.AddForce(transform.forward * throwForce * 100);
+    }
+
+    bool reachedLocation() {
+        if (_startedAttacking) {
+            return false;
+        }
+        return Vector3.Distance(attackPosition.position, transform.position) <= 0.1f;
     }
 }

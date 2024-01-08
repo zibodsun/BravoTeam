@@ -10,6 +10,8 @@ public class GorillaSceneManager : MonoBehaviour
     public float waitBeforeAttackTime;
     private float _timer;
 
+    public bool humanStartedCutting;
+
     // Start is called before the first frame update
     void Start()
     {
