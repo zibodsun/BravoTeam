@@ -97,7 +97,7 @@ public class Human : MonoBehaviour
         tempState = state;
         state = State.Escaping;
 
-        StartCoroutine(Wait(10));
+        StartCoroutine(Wait(5));
     }
 
     IEnumerator Wait(int n) { 

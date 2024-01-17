@@ -33,6 +33,9 @@ public class Gorilla : MonoBehaviour
     private Animator animator;
     private float speed;
     private bool _startedAttacking;
+    private bool _angry;
+    private bool _throw;
+    private Transform humanTransform;
 
     Transform banana;
     Rigidbody rb;
@@ -52,6 +55,8 @@ public class Gorilla : MonoBehaviour
     {
         speed = agent.desiredVelocity.magnitude;
         animator.SetFloat("speed", speed);
+        animator.SetBool("angry", _angry);
+        animator.SetBool("throw", _throw);
 
         // Random NavMesh position
         if (_waitTimer < _waitTime)
@@ -73,8 +78,10 @@ public class Gorilla : MonoBehaviour
         if (reachedLocation() && sceneManager.humanStartedCutting)
         {
             _startedAttacking = true;
-            transform.LookAt(FindFirstObjectByType<Human>().transform);
-            animator.Play("Angry");
+            humanTransform = FindFirstObjectByType<Human>().transform;
+            transform.LookAt(humanTransform);
+            _angry = true;
+            StartCoroutine(RandomiseThrowTime());
         }
     }
 
@@ -104,11 +111,9 @@ public class Gorilla : MonoBehaviour
         return false;
     }
 
-    IEnumerator Walk(Vector3 target) {
-        var step = 1 * Time.deltaTime; // calculate distance to move
-        transform.position = Vector3.MoveTowards(transform.position, target, step);
-        Debug.Log("Moving " + this.gameObject.name);
-        yield return null;
+    IEnumerator RandomiseThrowTime() {
+        yield return new WaitForSeconds(Random.Range(1f,3f));
+        _throw = true;
     }
 
     public void AttackHuman() {
@@ -126,7 +131,7 @@ public class Gorilla : MonoBehaviour
         banana.transform.SetParent(null);
         rb.useGravity = true;
         rb.isKinematic = false;
-        rb.AddForce(transform.forward * throwForce * 100);
+        rb.AddForce( (humanTransform.position - transform.position) * throwForce * 100);    // add force towards the direction of the human
     }
 
     bool reachedLocation() {
