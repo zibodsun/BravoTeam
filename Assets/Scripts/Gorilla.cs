@@ -40,6 +40,9 @@ public class Gorilla : MonoBehaviour
     Transform banana;
     Rigidbody rb;
 
+    public AudioSource breath;
+    public AudioSource roar;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -81,6 +84,7 @@ public class Gorilla : MonoBehaviour
             humanTransform = FindFirstObjectByType<Human>().transform;
             transform.LookAt(humanTransform);
             _angry = true;
+            roar.Play();
             StartCoroutine(RandomiseThrowTime());
         }
     }
@@ -99,6 +103,7 @@ public class Gorilla : MonoBehaviour
     public void GainBanana() {
         numBananas++;
         GetComponent<Animator>().Play("Jump");
+        breath.Play();
         GetComponent<Collider>().enabled = false;
 
         // multiAimConstraint.data.sourceObjects.Clear();
