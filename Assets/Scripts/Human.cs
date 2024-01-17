@@ -15,13 +15,17 @@ public class Human : MonoBehaviour
 
     public GorillaSceneManager sceneManager;
     public Transform targetTree;
+    public Transform leavePosition;
     public NavMeshAgent agent;
+    public Rigidbody chainsaw;
 
     public State state;
     public State tempState;
 
     Animator animator;
     private float _speed;
+    private bool _cutting;
+    private bool _injured;
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +42,8 @@ public class Human : MonoBehaviour
         // walking animation
         _speed = agent.desiredVelocity.magnitude;
         animator.SetFloat("speed", _speed);
+        animator.SetBool("cutting", _cutting);
+        animator.SetBool("injured", _injured);
 
         if (state != tempState)  // when the state changes
         {
@@ -47,17 +53,18 @@ public class Human : MonoBehaviour
                     // play walking animation
                     break;
                 case State.Cutting:
-                    animator.Play("BeginCutting");
+                    _cutting = true;
                     break;
                 case State.Escaping:
                     // play escape animation
+                    _injured = true;    // triggers the Angry animation
                     break;
 
             }
         }   
 
         // When the destination is reached
-        if (!agent.pathPending)
+        if (!agent.pathPending && state == State.Walking)
         {
             if (agent.remainingDistance <= agent.stoppingDistance)
             {
@@ -87,5 +94,21 @@ public class Human : MonoBehaviour
     public void Escape() {
         // animaition play
         Debug.Log("Escaping");
+        tempState = state;
+        state = State.Escaping;
+
+        StartCoroutine(Wait(10));
+    }
+
+    IEnumerator Wait(int n) { 
+        yield return new WaitForSeconds(n);
+        agent.SetDestination(leavePosition.position);
+        agent.speed = agent.speed * 0.7f;
+    }
+
+    public void DropChainsaw() {
+        chainsaw.transform.SetParent(null);
+        chainsaw.GetComponent<BoxCollider>().enabled = true;
+        chainsaw.useGravity = true;
     }
 }
