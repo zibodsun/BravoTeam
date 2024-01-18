@@ -1,0 +1,899 @@
+fileFormatVersion: 2
+guid: 608b807d353b8bb47a307fca92faf323
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_01_01
+    second: {fileID: 2100000, guid: 7cebd74d60e67074b986e037b749601c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_01_02
+    second: {fileID: 2100000, guid: 8bd65dfb72a3d2749942c795b0a558dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_01_03
+    second: {fileID: 2100000, guid: 3959f7c35797423419996113c3852187, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_01_04
+    second: {fileID: 2100000, guid: 0c0ba94545dd4c14cbb107dd26e33563, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_01_05
+    second: {fileID: 2100000, guid: b084176c75820764298efb2513724ba5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_01_06
+    second: {fileID: 2100000, guid: 8b333adcc25f3224dbf0a6196a8cbced, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_01_07
+    second: {fileID: 2100000, guid: 19f4d25702bc8224891b007f5c22a373, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_01_08
+    second: {fileID: 2100000, guid: 89214f3c5c5360442a5d2c0ec6c7b4db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_01_09
+    second: {fileID: 2100000, guid: d45732dec2b1a8a4f915a04a0da2e62e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_01_10
+    second: {fileID: 2100000, guid: 5047ad5eb0baf7f46bca87efb2793fa9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_02_01
+    second: {fileID: 2100000, guid: 6b1294b41c133c94cb93733d589f678f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_02_02
+    second: {fileID: 2100000, guid: 301889e2f04ef6f43bae1ea81e1341ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_02_04
+    second: {fileID: 2100000, guid: da56f8437d9668d43b60b8ee05036120, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_02_05
+    second: {fileID: 2100000, guid: 2ae702f304246d84c9815571e4fcd61a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_02_06
+    second: {fileID: 2100000, guid: b7c51b46d7e9bf049b7afaeaa5c45bd7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_02_07
+    second: {fileID: 2100000, guid: 074669a5dfc7f454cbc7632e5bf2b097, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_02_08
+    second: {fileID: 2100000, guid: 1f38a7254ac685f4785310b17154bfcc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_02_09
+    second: {fileID: 2100000, guid: 0bfdf12c666a87544849fb01babff388, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_02_10
+    second: {fileID: 2100000, guid: 40ec38de32ae55d4cb3fa5376a9c3d50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_02_11
+    second: {fileID: 2100000, guid: f4a0a5023c09d9b4daa65137f14a56c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_02_12
+    second: {fileID: 2100000, guid: 95ba5f1339d1e1d4fbd84c7612f082a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_02_14
+    second: {fileID: 2100000, guid: 054a0b92ea1623e4c94ce4e76fc2285a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_03_01
+    second: {fileID: 2100000, guid: 6504f2fd96669d34b951a2fd1866629b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_03_02
+    second: {fileID: 2100000, guid: d82377c6f5ba667469c0135d9c0d18f8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_03_03
+    second: {fileID: 2100000, guid: bd0be8112512ff44f9bc8a603aa373eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_03_04
+    second: {fileID: 2100000, guid: a14734a0668f4ec44b16489a3c2a471c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_03_05
+    second: {fileID: 2100000, guid: 5a01e402f9fd8eb47be5c7419647d779, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_03_06
+    second: {fileID: 2100000, guid: 9a2bc2498fd04004c831f138db269a51, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_03_07
+    second: {fileID: 2100000, guid: d0636b5ab287c9c4e967df876a639c75, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_03_08
+    second: {fileID: 2100000, guid: 9f77aead525a9624a84b9c9e993d3e53, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_03_09
+    second: {fileID: 2100000, guid: 3812f49ef6a3d9349a6b50b2dcb93660, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_03_10
+    second: {fileID: 2100000, guid: f7c6b2215d2749943acd0be4de02235f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_03_11
+    second: {fileID: 2100000, guid: 77f045336788436469c65370ef508e6b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_04_01
+    second: {fileID: 2100000, guid: b89e0102fc79756448b25d2739d77489, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_04_02
+    second: {fileID: 2100000, guid: 1760175f2dd6aa24e92235070af1300e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_04_03
+    second: {fileID: 2100000, guid: 1331f9bc64eedd4438fd2cd82d630541, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_04_04
+    second: {fileID: 2100000, guid: 41f7252f0f230f042a855e74b0066529, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_04_05
+    second: {fileID: 2100000, guid: 8648cf5a8b07f4b4d9243818bf41a479, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_04_06
+    second: {fileID: 2100000, guid: afeb965043991284e8fdfa3a6f5e25cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_04_07
+    second: {fileID: 2100000, guid: cad8fb086d06ee248bea2c3f51ba5520, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_04_08
+    second: {fileID: 2100000, guid: bc1c2518e3a163644a9ceb4558d54d55, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_04_09
+    second: {fileID: 2100000, guid: 71cbf0ed07b67a143b07b88d199f8c3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_07_01
+    second: {fileID: 2100000, guid: 8352eddc75cf9424788694fcb6a7ce3e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_07_02
+    second: {fileID: 2100000, guid: 36a9c3a71eee7c947bd5a35c438b84b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_07_03
+    second: {fileID: 2100000, guid: d099f99efa2d0aa448e0027130108db0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_07_04
+    second: {fileID: 2100000, guid: 8d60022ab61455143ab7f57430b146c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_07_05
+    second: {fileID: 2100000, guid: eff976d2a7e228e4ca640d18c291d2f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_07_06
+    second: {fileID: 2100000, guid: 3ad944bec2a0d76419c7b7d5366a0ae4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_07_07
+    second: {fileID: 2100000, guid: a1a094e2fc2072c49bc6925e2b57deb2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_07_08
+    second: {fileID: 2100000, guid: f4d1d2963e5649d4c929917ebad2f88b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_07_09
+    second: {fileID: 2100000, guid: 4bb6318e1e4993e4f81d5f9e5ac57383, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_07_10
+    second: {fileID: 2100000, guid: dd36387a1f81c2c479f06779c8b5862e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_07_12
+    second: {fileID: 2100000, guid: 05760d36d45d16d4b8e3951009a2da47, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_08_01
+    second: {fileID: 2100000, guid: fa9e8fe9a1fed354683bbad3babe4c4b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_08_02
+    second: {fileID: 2100000, guid: 6d18fe266874e6946b30e2fc3990ccf0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_08_03
+    second: {fileID: 2100000, guid: 6b7700cfb9b67a64f8a42c11252becf8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_08_04
+    second: {fileID: 2100000, guid: e5d437e82073bb546aa7b7bb60aaf108, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_08_05
+    second: {fileID: 2100000, guid: f34eff1eadd1aca49809f628b65b8039, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_08_06
+    second: {fileID: 2100000, guid: 5e79d2f1569f8b841bf02f33db71a101, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_08_07
+    second: {fileID: 2100000, guid: 705bfd86d31aa7243bb9c9b178d2fa2d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_08_08
+    second: {fileID: 2100000, guid: 2a6e65065dc8f134ba4b812e499bcca3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_08_09
+    second: {fileID: 2100000, guid: ee82c5328e5638749a81e1295944883f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_52_15_01
+    second: {fileID: 2100000, guid: a59d01960863dbf4cb56445ac431cc5f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_52_15_02
+    second: {fileID: 2100000, guid: 9cfa9de92f8dbee489f25ae52aedfa0a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_52_15_03
+    second: {fileID: 2100000, guid: 0ce32b97f6cfdb145913ede554d98e6f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_52_15_04
+    second: {fileID: 2100000, guid: d8e7cbb6a16f29d4798d6e5d63384bdb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_52_15_05
+    second: {fileID: 2100000, guid: 7fd22f58a06e0fc4f8bdaf1829f82c49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_52_15_06
+    second: {fileID: 2100000, guid: 5056a3bfb67600344ac14dc9e4170815, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_52_15_07
+    second: {fileID: 2100000, guid: fff16dba6d92ef04da907d481fb90620, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_52_15_08
+    second: {fileID: 2100000, guid: 551c291c62d09054a9dbb76ea07d44c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chip bag 1-1
+    second: {fileID: 2100000, guid: 6d5c2d522d0acae4680334d2e037976e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chip bag 1-2
+    second: {fileID: 2100000, guid: 75ae33c673bac4c4e8315e453d546ab1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chip bag 1-3
+    second: {fileID: 2100000, guid: d1adb4671bc4aed44a2c3b75517580f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chip bag 1-4
+    second: {fileID: 2100000, guid: e801fb5a46cce294f9b32f744d203f0b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chip bag 1-5
+    second: {fileID: 2100000, guid: ac9dcb0197cd8b04694d5ea4c24e4105, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chip bag 1-6
+    second: {fileID: 2100000, guid: bbb89a19d5e7e234c947a19a1fdab121, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wooden
+    second: {fileID: 2100000, guid: cd119d02146097e40b78bd6f86c6cf8c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u597D\u91D1\u5C5E\u5E38\u7528"
+    second: {fileID: 2100000, guid: 32a43cd84e0696b4da3d3211ceff8162, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6709\u673A\u73BB\u7483"
+    second: {fileID: 2100000, guid: 9fac362316ea4e54382aff45d9223c65, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u767D\u8272"
+    second: {fileID: 2100000, guid: 4719b7cd8264b0248adf340adcf2a657, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u94DD\u5408\u91D1"
+    second: {fileID: 2100000, guid: 30ca499390cbe604c879f13c0d9328bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u94DD\u5408\u91D1s"
+    second: {fileID: 2100000, guid: e6a2919e7e798304c86804b8c342ba00, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wooden
+    second: {fileID: 2800000, guid: 74bc2c780e610d741a8969c1eb7ea28d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_01_01
+    second: {fileID: 2800000, guid: 4da92decf3e6b88498b85607520a75ee, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_01_02
+    second: {fileID: 2800000, guid: b4c2c328285e9234c9679a30281dc377, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_01_03
+    second: {fileID: 2800000, guid: 2b434d54dae0bb14ca03a03506ca84d8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_01_04
+    second: {fileID: 2800000, guid: f04629e0e6c8f2143b33aabca65e7c96, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_01_05
+    second: {fileID: 2800000, guid: 796f83caa5f757f4d879f572ffa77008, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_01_06
+    second: {fileID: 2800000, guid: 39aacfbcea7989143acee61959d1aeb8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_01_07
+    second: {fileID: 2800000, guid: fe7405f2d06bf5c4c9e03e5a53f63fd5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_01_08
+    second: {fileID: 2800000, guid: b8b17f776a361e740b3bba5eb8598756, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_01_09
+    second: {fileID: 2800000, guid: 18a78cac10cc5cc4c95d8584922747e0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_01_10
+    second: {fileID: 2800000, guid: 52ea2bd369e34ef43bfbac7c1971129d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_02_01
+    second: {fileID: 2800000, guid: 48185f07676b1a641b1a15f2fb6b7ab1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_02_02
+    second: {fileID: 2800000, guid: 243a37b4376e1a147998d67341aacdc1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_02_04
+    second: {fileID: 2800000, guid: 207ccb6fc191a9042a84fe14b5a2eae7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_02_05
+    second: {fileID: 2800000, guid: f8b32fc9d68fb3d4595dca46ec364c23, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_02_06
+    second: {fileID: 2800000, guid: 70a0e4336699675408e991943db2b6e1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_02_07
+    second: {fileID: 2800000, guid: 03e71582eb324cd438e51f5a2fd0bf6f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_02_08
+    second: {fileID: 2800000, guid: 8b3f1bd7338c5a043a6cabc10cf571ad, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_02_09
+    second: {fileID: 2800000, guid: 1278460ac986b1f44b849857c004c951, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_02_10
+    second: {fileID: 2800000, guid: 15ae16ea6e20ee44daa2371255d8a9aa, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_02_11
+    second: {fileID: 2800000, guid: 2fd4f22e0b2fe734cb55df450a03e3b9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_02_12
+    second: {fileID: 2800000, guid: 7a22ea435e6c4ad47921cc6aa6c33123, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_02_14
+    second: {fileID: 2800000, guid: 4bc20be52b81b9a44957bc7b00669c01, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_03_01
+    second: {fileID: 2800000, guid: 2f0c6008e5ae31645a31d960a6390bc4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_03_02
+    second: {fileID: 2800000, guid: e50a3cdc0c560984f995a07799b2d677, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_03_03
+    second: {fileID: 2800000, guid: 279ac9a63621f4642bcddb6f26648873, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_03_04
+    second: {fileID: 2800000, guid: fe7efe2837cd51340b3d8b80249dcb1e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_03_05
+    second: {fileID: 2800000, guid: 3adc976de10df4a42afad6316e38a9aa, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_03_06
+    second: {fileID: 2800000, guid: d7737d4b401433a40bff10d742bd29b3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_03_07
+    second: {fileID: 2800000, guid: 8d012f131b9956743a00f640772af1d5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_03_08
+    second: {fileID: 2800000, guid: 22526aabd494cdd4d86ea6102451e2b3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_03_09
+    second: {fileID: 2800000, guid: f82d65ae76dae61458509748d84a31e5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_03_10
+    second: {fileID: 2800000, guid: 805512c9326318246a8022d5f7a29733, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_03_11
+    second: {fileID: 2800000, guid: 2a88fc3783dcc644495f1e3142095e0c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_04_01
+    second: {fileID: 2800000, guid: ab6a76f370f67f148814cb1240a4f640, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_04_02
+    second: {fileID: 2800000, guid: 1511dfbbc5804f74f976c509b1ff94f2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_04_03
+    second: {fileID: 2800000, guid: efbc478cd257f3442a002c17badece1c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_04_04
+    second: {fileID: 2800000, guid: 6e19a52f39bfc2f4f8a729c8e6757c0d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_04_05
+    second: {fileID: 2800000, guid: 7ad93eb89ad872446a5ead33bb8df29b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_04_06
+    second: {fileID: 2800000, guid: 7b85a716fad601a4cb6a87adcddc520a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_04_07
+    second: {fileID: 2800000, guid: b364edc997309a04bb9182f9aa5bff82, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_04_08
+    second: {fileID: 2800000, guid: dbf07f74368b4b148a35949ae157ff2a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_04_09
+    second: {fileID: 2800000, guid: f7322b3ff88f0054883ea1ea7929db3f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_07_01
+    second: {fileID: 2800000, guid: be5f2c8fbfbb12a43b81a7dba80e6c04, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_07_02
+    second: {fileID: 2800000, guid: bf9ed3cf67b205d49874ee420cceb935, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_07_03
+    second: {fileID: 2800000, guid: a1faa2fd72a022044847b4402bf2ecd8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_07_04
+    second: {fileID: 2800000, guid: 7f17dffee91a8cb468fa41d9c0ffa78b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_07_05
+    second: {fileID: 2800000, guid: f7de59d83ec0c58458949868709f6b48, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_07_06
+    second: {fileID: 2800000, guid: 93cc3a0353ff0494fb1e027201486998, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_07_07
+    second: {fileID: 2800000, guid: 9e3ab209c3bd2644d9cc590737cb237e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_07_08
+    second: {fileID: 2800000, guid: eb0b7dd7ed40ddf4c96b27ba0d3d2870, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_07_09
+    second: {fileID: 2800000, guid: cb503ba4439f9ca45a4e0af9b336d63c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_07_10
+    second: {fileID: 2800000, guid: 86e7227c40286e245bb71da9a2dccc05, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_08_01
+    second: {fileID: 2800000, guid: 08a59f8d37a2dd44084cbf0a6dc7b478, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_08_02
+    second: {fileID: 2800000, guid: 2e48815793369b14cb7731b41fe732f7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_08_03
+    second: {fileID: 2800000, guid: 8a3bba6597998fe4bbfe5399afb3d9d0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_08_04
+    second: {fileID: 2800000, guid: cc95590adc781c049a6cf1fe70eb87e9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_08_05
+    second: {fileID: 2800000, guid: 79970df68c7de4d4783832ca68416c65, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_08_06
+    second: {fileID: 2800000, guid: fa29911772f47444f8d294d065f2b3db, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_08_07
+    second: {fileID: 2800000, guid: ffd7d94e0592a7942b5a29f8ae925bc7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_08_08
+    second: {fileID: 2800000, guid: d9b16e7e048262b4dbcd67b4419b1e52, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_32_08_09
+    second: {fileID: 2800000, guid: 2bcddc8e0b5a99d4fb948e48c7685f2b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_52_15_01_bump
+    second: {fileID: 2800000, guid: 1f4646228203cc04b920cfefd618302c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_52_15_02
+    second: {fileID: 2800000, guid: 97c4bbda31809504db272e310f9cc802, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_52_15_03
+    second: {fileID: 2800000, guid: 099c83c8fc7b1294f8f481418785c47a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_52_15_04
+    second: {fileID: 2800000, guid: 5caf3520bddd0c643887ec4793804c90, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_52_15_05
+    second: {fileID: 2800000, guid: 808ced756201e9344957d512b82696d6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_52_15_06
+    second: {fileID: 2800000, guid: 489e15c22376b484e8eed7a55ae36b34, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_52_15_07
+    second: {fileID: 2800000, guid: 84ac9f8fb4952c9468d91c69d361c2ec, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cgaxis_models_52_15_08
+    second: {fileID: 2800000, guid: 1e786a946eb5fdc459cb31af5b673fa6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: chip_bag_1-1
+    second: {fileID: 2800000, guid: c8abb7afe5e75ad42b1780e29558fcfd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: chip_bag_1-2
+    second: {fileID: 2800000, guid: 7e96503c8b9efe74bae86d76d636590d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: chip_bag_1-3
+    second: {fileID: 2800000, guid: be0a9495a0c93eb4aa70cb31eaa785d8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: chip_bag_1-4
+    second: {fileID: 2800000, guid: be04afb010266ff4e8467923b7bbc987, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: chip_bag_1-5
+    second: {fileID: 2800000, guid: 1fa8b20f184ac90448a965c344eb684c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: chip_bag_1-6
+    second: {fileID: 2800000, guid: 88e45a10e55b50846ac448633b97090d, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

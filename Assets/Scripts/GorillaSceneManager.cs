@@ -7,6 +7,9 @@ public class GorillaSceneManager : MonoBehaviour
     public List<Gorilla> gorillas = new List<Gorilla>();
     public Human human;
 
+
+
+
     public float waitBeforeAttackTime;
     private float _timer;
 
