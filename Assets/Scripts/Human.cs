@@ -27,6 +27,9 @@ public class Human : MonoBehaviour
     private bool _cutting;
     private bool _injured;
 
+    public AudioSource chainsawStart;
+    public AudioSource chainsawWhirl;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -73,6 +76,7 @@ public class Human : MonoBehaviour
                     tempState = state;
                     state = State.Cutting;
                     sceneManager.humanStartedCutting = true;
+                    chainsawStart.Play();
                 }
             }
         }
@@ -107,8 +111,13 @@ public class Human : MonoBehaviour
     }
 
     public void DropChainsaw() {
+        chainsawWhirl.Stop();
         chainsaw.transform.SetParent(null);
         chainsaw.GetComponent<BoxCollider>().enabled = true;
         chainsaw.useGravity = true;
+    }
+
+    public void ChainsawPlay() {
+        chainsawWhirl.gameObject.SetActive(true);
     }
 }
