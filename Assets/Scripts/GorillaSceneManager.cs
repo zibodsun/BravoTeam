@@ -10,7 +10,7 @@ public class GorillaSceneManager : MonoBehaviour
 
 
 
-    public float waitBeforeAttackTime;
+    public float waitBeforeAttackTime;      // time between the appearence of the human and the gorillas starting to walk
     private float _timer;
 
     public bool humanStartedCutting;

@@ -46,7 +46,7 @@ public class Gorilla : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _waitTime = 5f;
+        _waitTime = Random.Range(5f,10f);
         numBananas = 0;
         multiAimConstraint = GetComponentInChildren<MultiAimConstraint>();
         rigBuilder = GetComponentInChildren<RigBuilder>();
@@ -122,9 +122,6 @@ public class Gorilla : MonoBehaviour
     }
 
     public void AttackHuman() {
-        // Human human = (Human)FindAnyObjectByType(typeof(Human));
-        // StartCoroutine(Walk(attackPosition.position));
-        // multiAimConstraint.data.sourceObjects.Add(new WeightedTransform(human.transform, 1));
         rigBuilder.enabled = true;
         agent.SetDestination(attackPosition.position);
         isRoaming = false;
