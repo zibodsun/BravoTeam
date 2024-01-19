@@ -110,6 +110,7 @@ public class Human : MonoBehaviour
         yield return new WaitForSeconds(5f);
         agent.SetDestination(leavePosition.position);
         agent.speed = agent.speed * 0.9f;       // slows down the agent to simulate injury
+        sceneManager.fadeSceneController.Play("FadeOut");
     }
 
     public void DropChainsaw() {
