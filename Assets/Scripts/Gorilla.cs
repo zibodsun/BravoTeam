@@ -29,7 +29,7 @@ public class Gorilla : MonoBehaviour
     private float _waitTimer;
 
     private MultiAimConstraint multiAimConstraint;
-    private RigBuilder rigBuilder;
+    public RigBuilder rigBuilder;
     private Animator animator;
     private float speed;
     private bool _startedAttacking;
@@ -94,6 +94,8 @@ public class Gorilla : MonoBehaviour
         // When banana is given to the gorilla
         if (other.tag == "Banana") {
             other.GetComponent<XRGrabInteractable>().enabled = false;
+            other.GetComponent<Rigidbody>().useGravity = false;
+            other.GetComponent<Rigidbody>().isKinematic = true;
             other.transform.SetParent(bananaAttachPoint);
             other.transform.localPosition = new Vector3(0, 0, 0);
             GainBanana();
@@ -105,8 +107,6 @@ public class Gorilla : MonoBehaviour
         GetComponent<Animator>().Play("Jump");
         breath.Play();
         GetComponent<Collider>().enabled = false;
-
-        // multiAimConstraint.data.sourceObjects.Clear();
     }
     // check if this gorilla has been given any bananas
     public bool HasBanana() {

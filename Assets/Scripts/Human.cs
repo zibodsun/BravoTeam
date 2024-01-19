@@ -33,6 +33,7 @@ public class Human : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        sceneManager.Play(3);
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
         ApproachTree();
@@ -86,7 +87,7 @@ public class Human : MonoBehaviour
     {
         if (other.tag == "Banana")
         {
-            Escape();
+            StartCoroutine(Escape());
         }
     }
     public void ApproachTree() {
@@ -95,19 +96,20 @@ public class Human : MonoBehaviour
         tempState = state;
         state = State.Walking;
     }
-    public void Escape() {
+    // human gets hit by banana
+    IEnumerator Escape() {
+        yield return new WaitForSeconds(2f);
         // animaition play
         Debug.Log("Escaping");
         tempState = state;
         state = State.Escaping;
-
-        StartCoroutine(Wait(5));
+        StartCoroutine(Wait());
     }
-
-    IEnumerator Wait(int n) { 
-        yield return new WaitForSeconds(n);
+    // "angry" animation stops playing
+    IEnumerator Wait() {
+        yield return new WaitForSeconds(5f);
         agent.SetDestination(leavePosition.position);
-        agent.speed = agent.speed * 0.7f;
+        agent.speed = agent.speed * 0.9f;       // slows down the agent to simulate injury
     }
 
     public void DropChainsaw() {
