@@ -98,6 +98,7 @@ public class Gorilla : MonoBehaviour
             other.GetComponent<Rigidbody>().isKinematic = true;
             other.transform.SetParent(bananaAttachPoint);
             other.transform.localPosition = new Vector3(0, 0, 0);
+            other.transform.rotation = bananaAttachPoint.transform.rotation;
             GainBanana();
         }
     }
