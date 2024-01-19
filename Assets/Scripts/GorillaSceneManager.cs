@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class GorillaSceneManager : MonoBehaviour
 {
-    public List<Gorilla> gorillas = new List<Gorilla>();
+    public List<Gorilla> gorillas = new();
     public Human human;
+    public List<GameObject> narrationLines = new();
 
-
-
-
-    public float waitBeforeAttackTime;
+    public float waitBeforeAttackTime;      // time between the appearence of the human and the gorillas starting to walk
     private float _timer;
 
     public bool humanStartedCutting;
@@ -18,7 +16,14 @@ public class GorillaSceneManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        // store all children
+        foreach (Transform child in transform)
+        {
+            narrationLines.Add(child.gameObject);
+        }
+
+        Play(1);
+        StartCoroutine(PlaySecondLine());   // waits then plays the second line
     }
 
     // Update is called once per frame
@@ -29,7 +34,7 @@ public class GorillaSceneManager : MonoBehaviour
             return;
         }
 
-        // this code won't run untill all gorillas have bananas
+        // this code won't run until all gorillas have bananas
         human.gameObject.SetActive(true);
 
         // wait before walking to the attack position
@@ -41,6 +46,24 @@ public class GorillaSceneManager : MonoBehaviour
             foreach (Gorilla g in gorillas)
             {
                 g.AttackHuman();
+            }
+        }
+    }
+
+    IEnumerator PlaySecondLine() {
+        yield return new WaitForSeconds(20f);
+        Play(2);
+    }
+
+    // Plays a narration line after pausing currently playing ones
+    public void Play(int index) {
+        for (int i = 0; i < narrationLines.Count; i++) {
+            if (index == i)
+            {
+                narrationLines[index].SetActive(true);
+            }
+            else {
+                narrationLines[i].SetActive(false);
             }
         }
     }

@@ -1215,7 +1215,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d0c12eed2a3a40a48abb202c3e4c4e30, type: 3}
       propertyPath: m_Name
-      value: 1 - gorillaModel
+      value: gorillaModel
       objectReference: {fileID: 0}
     - target: {fileID: 1135287226742058225, guid: d0c12eed2a3a40a48abb202c3e4c4e30, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2199,7 +2199,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: 0
+  m_BaseOffset: -0.05
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &5104800318625350519
@@ -2222,6 +2222,7 @@ MonoBehaviour:
   bananaAttachPoint: {fileID: 4298654178814625055}
   attackPosition: {fileID: 0}
   throwForce: 1
+  rigBuilder: {fileID: 0}
   breath: {fileID: 1160704555717262207}
   roar: {fileID: 4674398551089495350}
 --- !u!136 &7141895287114634546
