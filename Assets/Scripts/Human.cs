@@ -107,7 +107,7 @@ public class Human : MonoBehaviour
     }
     // "angry" animation stops playing
     IEnumerator Wait() {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(7f);
         agent.SetDestination(leavePosition.position);
         agent.speed = agent.speed * 0.9f;       // slows down the agent to simulate injury
     }
