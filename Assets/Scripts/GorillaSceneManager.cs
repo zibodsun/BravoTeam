@@ -7,6 +7,7 @@ public class GorillaSceneManager : MonoBehaviour
     public List<Gorilla> gorillas = new();
     public Human human;
     public List<GameObject> narrationLines = new();
+    public Animator fadeSceneController;
 
     public float waitBeforeAttackTime;      // time between the appearence of the human and the gorillas starting to walk
     private float _timer;
@@ -21,9 +22,7 @@ public class GorillaSceneManager : MonoBehaviour
         {
             narrationLines.Add(child.gameObject);
         }
-
-        Play(1);
-        StartCoroutine(PlaySecondLine());   // waits then plays the second line
+        Play(0);
     }
 
     // Update is called once per frame
@@ -49,7 +48,11 @@ public class GorillaSceneManager : MonoBehaviour
             }
         }
     }
-
+    public void PlayFirstLine()
+    {
+        Play(1);
+        StartCoroutine(PlaySecondLine());   // waits then plays the second line
+    }
     IEnumerator PlaySecondLine() {
         yield return new WaitForSeconds(20f);
         Play(2);
