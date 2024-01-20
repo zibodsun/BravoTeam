@@ -13,6 +13,7 @@ public class GorillaSceneManager : MonoBehaviour
     private float _timer;
 
     public bool humanStartedCutting;
+    public GameObject tooltip;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +36,7 @@ public class GorillaSceneManager : MonoBehaviour
 
         // this code won't run until all gorillas have bananas
         human.gameObject.SetActive(true);
+        tooltip.SetActive(false);
 
         // wait before walking to the attack position
         if (_timer < waitBeforeAttackTime)
