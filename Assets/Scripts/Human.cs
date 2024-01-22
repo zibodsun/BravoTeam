@@ -103,11 +103,12 @@ public class Human : MonoBehaviour
         Debug.Log("Escaping");
         tempState = state;
         state = State.Escaping;
+        animator.SetTrigger("Escape");
         StartCoroutine(Wait());
     }
     // "angry" animation stops playing
     IEnumerator Wait() {
-        yield return new WaitForSeconds(5f);  // duration of angry animation
+        yield return new WaitForSeconds(4f);  // duration of angry animation
         agent.SetDestination(leavePosition.position);
         agent.speed = agent.speed * 0.9f;       // slows down the agent to simulate injury
         sceneManager.fadeSceneController.Play("FadeOut");
