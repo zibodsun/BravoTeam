@@ -11,7 +11,7 @@ This application uses the medium of Virtual Reality to present fun and interacti
 
 ## AVOCADOS: The transport emissions of exotic fruits
 ![image](https://github.com/NatashaNo/BravoTeam/assets/147525423/1aef571a-9d10-4b6c-be40-1d7d79ecb5bf)
--Text-
+Avocados, among other exotic fruits, contribute significantly to carbon emissions due to transportation. Being indigenous to Central and South America, most avocados travel long distances to meet the demand of the rest of the world. The international trade of avocados therefore comes with a significant carbon footprint, not only determined by the medium of transportation, but also by the energy-intensive storage methods that the fruit requires during the trip, to ensure optimal temperatures to preserve its quality. Therefore, considering local fruit choices that do not need to travel across the world may be a more sustainable decision.
 
 ## PALM OIL: The effect of deforestation on warming and animal habitats
 ![image](https://github.com/NatashaNo/BravoTeam/assets/147525423/eb27ba8b-8025-406c-9e30-ebed4c0bc83a)
