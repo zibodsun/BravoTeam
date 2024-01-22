@@ -993,6 +993,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2054464284839554635, guid: c68437ef457d73f44b80bd5ae02836a0, type: 3}
+      propertyPath: m_BaseOffset
+      value: -0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054464284839554635, guid: c68437ef457d73f44b80bd5ae02836a0, type: 3}
       propertyPath: m_Acceleration
       value: 3
       objectReference: {fileID: 0}
@@ -8270,7 +8274,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 0}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -10083,7 +10087,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 0}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -10330,7 +10334,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 0}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -14188,6 +14192,10 @@ PrefabInstance:
     - target: {fileID: 2054464284839554635, guid: c68437ef457d73f44b80bd5ae02836a0, type: 3}
       propertyPath: m_Speed
       value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054464284839554635, guid: c68437ef457d73f44b80bd5ae02836a0, type: 3}
+      propertyPath: m_BaseOffset
+      value: -0.07
       objectReference: {fileID: 0}
     - target: {fileID: 2054464284839554635, guid: c68437ef457d73f44b80bd5ae02836a0, type: 3}
       propertyPath: m_Acceleration
