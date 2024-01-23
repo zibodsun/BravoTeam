@@ -16,6 +16,6 @@ public class CanvasTransition : MonoBehaviour
     }
 
     public void SceneTransition() {
-        SceneManager.LoadScene("BUILD_GroceryStore");
+        SceneManager.LoadScene("BUILD_GroceryStoreEND");
     }
 }
