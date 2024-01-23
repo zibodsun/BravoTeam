@@ -72,7 +72,7 @@ We developed this grocery shopping simulation with the goal of spreading more aw
 
 ### Installation - Application Only
 
-1. Simply download the .apk build and sideload onto device.
+1. Simply download the [.apk build](https://github.com/zibodsun/BravoTeam/releases) and sideload onto device.
 
 ## Contributing
 
