@@ -1,4 +1,23 @@
-![MicrosoftTeams-image](https://github.com/NatashaNo/BravoTeam/assets/147525423/c1b3e30c-d1bf-4487-b579-3dbea576a23e)
+<br />
+<div align="center">
+  <a href="https://github.com/zibodsun/BravoTeam">
+    <img src="Logo.png" alt="Logo" width="500" height="500">
+  </a>
+
+  <h3 align="center">A Virtual Reality application for climate change education</h3>
+
+  <p align="center">
+    <br />
+    <a href="https://github.com/zibodsun/BravoTeam"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/zibodsun/BravoTeam">View Demo</a>
+    ·
+    <a href="https://github.com/zibodsun/BravoTeam/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/zibodsun/BravoTeam/issues">Request Feature</a>
+  </p>
+</div>
 # SmartBuy - Conscious choices, Greener tomorrow
 
 We developed this grocery shopping simulation with the goal of spreading more awareness about bad practices in the production of common shopping items, which cause negative environmental effects. We aim to provide facts about the production process of some products/ingredients in a memorable way, and offer the user the ability to make more conscious decisions in their consumer behaviour.
