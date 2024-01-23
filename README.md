@@ -25,7 +25,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#smartbuy-conscious-choices-greener-tomorrow">About The Project</a>
+      <a href="#smartbuy---conscious-choices-greener-tomorrow">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
@@ -34,8 +34,8 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#dependencies">Dependencies</a></li>
-        <li><a href="#installation-unity-project">Installation - Unity Project</a></li>
-        <li><a href="#installation-application-only">Installation - Application Only</a></li>
+        <li><a href="#installation---unity-project">Installation - Unity Project</a></li>
+        <li><a href="#installation---application-only">Installation - Application Only</a></li>
       </ul>
     </li>
     <li><a href="#contributing">Contributing</a></li>
