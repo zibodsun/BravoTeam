@@ -1,26 +1,57 @@
-![MicrosoftTeams-image](https://github.com/NatashaNo/BravoTeam/assets/147525423/c1b3e30c-d1bf-4487-b579-3dbea576a23e)
+<!-- Logo -->
+<br />
+<div align="center">
+  <a href="https://github.com/zibodsun/BravoTeam">
+    <img src="images/Logo.png" alt="Logo" width="500" height="500">
+  </a>
+
+  <h3 align="center">A Virtual Reality application for climate change education</h3>
+
+  <p align="center">
+    <br />
+    <a href="https://github.com/zibodsun/BravoTeam"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/zibodsun/BravoTeam">View Demo</a>
+    ·
+    <a href="https://github.com/zibodsun/BravoTeam/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/zibodsun/BravoTeam/issues">Request Feature</a>
+  </p>
+</div>
+
+<!-- Table of Contents -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#smartbuy---conscious-choices-greener-tomorrow">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#dependencies">Dependencies</a></li>
+        <li><a href="#installation---unity-project">Installation - Unity Project</a></li>
+        <li><a href="#installation---application-only">Installation - Application Only</a></li>
+      </ul>
+    </li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
+<!--![MicrosoftTeams-image](https://github.com/NatashaNo/BravoTeam/assets/147525423/c1b3e30c-d1bf-4487-b579-3dbea576a23e)-->
 # SmartBuy - Conscious choices, Greener tomorrow
 
 We developed this grocery shopping simulation with the goal of spreading more awareness about bad practices in the production of common shopping items, which cause negative environmental effects. We aim to provide facts about the production process of some products/ingredients in a memorable way, and offer the user the ability to make more conscious decisions in their consumer behaviour.
 
-# The Project
+### Built With
 
-This application uses the medium of Virtual Reality to present fun and interactive visualisations of climate change related issues. The animations and special effects aims to encourage the user to conduct more conscious shopping choices by providing informative content and appealing to empathy. The application is freely scalable as more products can be introduced in the future with their own unique narrative tools of information. The project was conducted as part of the M.Sc. Virtual Reality course at Swansea University.
-
-# Features
-
-## AVOCADOS: The transport emissions of exotic fruits
-![image](https://github.com/NatashaNo/BravoTeam/assets/147525423/1aef571a-9d10-4b6c-be40-1d7d79ecb5bf)
-Avocados, among other exotic fruits, contribute significantly to carbon emissions due to transportation. Being indigenous to Central and South America, most avocados travel long distances to meet the demand of the rest of the world. The international trade of avocados therefore comes with a significant carbon footprint, not only determined by the medium of transportation, but also by the energy-intensive storage methods that the fruit requires during the trip, to ensure optimal temperatures to preserve its quality. Therefore, considering local fruit choices that do not need to travel across the world may be a more sustainable decision.
-
-## PALM OIL: The effect of deforestation on warming and animal habitats
-![image](https://github.com/NatashaNo/BravoTeam/assets/147525423/eb27ba8b-8025-406c-9e30-ebed4c0bc83a)
-Each year, palm oil plantations destroy millions of acres of forested land, create billions of tons of carbon pollution, and kill endangered wildlife. All of this makes the palm oil industry one of the worst environmental offenders on the planet. In 2015, over 62,000 square miles around the world, much of it former forests, were committed to palm oil plantations. That's the size of the whole United Kingdom.
-
-Deforestation impacts global warming by reducing the number of trees available to absorb and store carbon dioxide, a major greenhouse gas. As trees are cleared, carbon that was stored is released into the atmosphere, contributing to the greenhouse effect and the overall rise in global temperatures.
-
-Palm oil production is threatening the habitat of a myriad of distinct species of animals. Oil plantations in Southeast Asia and Africa have been destroying the world’s rain forests, with the main victims being great apes, orangutans, elephants and other critically endangered species.
-
+* [Unity](https://unity.com/)
 
 ## Getting Started
 
@@ -28,15 +59,55 @@ Palm oil production is threatening the habitat of a myriad of distinct species o
 
 * Developed for Meta Quest devices.
 * Tested on Meta Quest 3.
-* Standalone build with .apk file.
+* Unity 2022.3.11 with Android Support
 
-### Installing
+### Installation - Unity Project
 
-* Simply download the [.apk build](https://github.com/NatashaNo/BravoTeam/releases) and sideload onto device.
+1. Set up the [Android Environment](https://docs.unity3d.com/Manual/android-sdksetup.html)
+2. Clone the repo
+   ```sh
+   git clone https://github.com/zibodsun/BravoTeam
+   ```
+3. Open the project using Unity Hub
+
+### Installation - Application Only
+
+1. Simply download the [.apk build](https://github.com/zibodsun/BravoTeam/releases) and sideload onto device.
+
+## Contributing
+
+We welcome developers to add their own feature in the form of a new product to go on the shelves. If you have a contribution that would make this better, please fork the repo and create a pull request.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## Contact
+
+This application was developed by students from Swansea University as a part of the EG-M126 module.
+
+* Natasza: 2021200@swansea.ac.uk
+* Zibo: 2357888@swansea.ac.uk
 
 ## Acknowledgments
-
-Developed using Unity version 2022.3.11f1.
-
 ### Credits to used assets
-*WIP*
+* https://assetstore.unity.com/packages/3d/vegetation/plants/exaggerated-and-unique-foliage-145037
+*	https://assetstore.unity.com/packages/3d/vegetation/trees/yughues-free-palm-trees-13540
+*	https://assetstore.unity.com/packages/3d/vegetation/trees/palm-tree-pack-free-214483
+*	https://assetstore.unity.com/packages/3d/vegetation/trees/coconut-palm-tree-pack-7888
+*	https://assetstore.unity.com/packages/3d/props/petrol-chainsaw-74889
+*	https://assetstore.unity.com/packages/3d/vegetation/trees/dream-forest-tree-105297
+*	https://polygone.art/#page=Model&guid=4j90KAnU9lw
+*	https://pixabay.com/sound-effects/
+*	https://freesound.org/people/Timbre/sounds/686479/
+*	https://www.turbosquid.com/3d-models/3d-model-3d-supermarket-shelves-collection-1992213
+*	https://clipartpng.com/?2890,tree-png-clip-art
+*	https://pngtree.com/so/happy-gorilla-vector
+*	https://polygone.art/#page=Model&guid=8ciDd9k8wha
+*	https://assetstore.unity.com/packages/vfx/particles/fire-explosions/free-stylized-smoke-effects-pack-226406
+*	https://github.com/microsoft/Microsoft-Rocketbox
+*	https://polygone.art/#page=Model&guid=9Ptsg_xZt6B
+•	https://assetstore.unity.com/packages/3d/props/tools/survival-kit-lite-92549
+
