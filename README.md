@@ -8,7 +8,7 @@
 
   <p align="center">
     <br />
-    <a href="https://github.com/zibodsun/BravoTeam"><strong>Explore the docs »</strong></a>
+    <a href="SmartBuy_Report.pdf"><strong>Learn more about Climate Change and VR»</strong></a>
     <br />
     <br />
     <a href="https://github.com/zibodsun/BravoTeam">View Demo</a>
