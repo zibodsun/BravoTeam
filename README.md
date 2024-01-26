@@ -109,5 +109,12 @@ This application was developed by students from Swansea University as a part of 
 *	https://assetstore.unity.com/packages/vfx/particles/fire-explosions/free-stylized-smoke-effects-pack-226406
 *	https://github.com/microsoft/Microsoft-Rocketbox
 *	https://polygone.art/#page=Model&guid=9Ptsg_xZt6B
-•	https://assetstore.unity.com/packages/3d/props/tools/survival-kit-lite-92549
+*	https://assetstore.unity.com/packages/3d/props/tools/survival-kit-lite-92549
+*	https://assetstore.unity.com/packages/3d/props/food/carton-of-milk-4k-pbr-162383
+*	https://assetstore.unity.com/packages/tools/modeling/mesh-optimizer-154517
+*	https://assetstore.unity.com/packages/3d/props/food/rpg-food-props-demo-248712
+*	https://assetstore.unity.com/packages/3d/props/furniture/fresh-shelving-267101
+*	https://assetstore.unity.com/publishers/31837
+*	https://assetstore.unity.com/packages/vfx/particles/fire-explosions/free-stylized-smoke-effects-pack-226406
+
 
