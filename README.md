@@ -23,6 +23,7 @@
 
 {% include youtube.html id="RRpo6CVb3zM" %}
 <br/>
+
 We developed this grocery shopping simulation with the goal of spreading more awareness about bad practices in the production of common shopping items, which cause negative environmental effects. We aim to provide facts about the production process of some products/ingredients in a memorable way, and offer the user the ability to make more conscious decisions in their consumer behaviour. This application uses the medium of Virtual Reality to present fun and interactive visualisations of climate change related issues. The animations and special effects aims to encourage the user to conduct more conscious shopping choices by providing informative content and appealing to empathy. The application is freely scalable as more products can be introduced in the future with their own unique narrative tools of information. The project was conducted as part of the M.Sc. Virtual Reality course at Swansea University.
 
 # Features
